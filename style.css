@@ -1,0 +1,429 @@
+@charset 'utf-8';
+
+html {
+   
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+    
+
+body {
+    height: 3000px;
+    overflow-x: hidden;
+    background-color: white;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    background-color: gray;
+    text-align: center;
+    z-index: 99;
+}
+
+a {
+    color: black; /* 링크 텍스트 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+a:hover {
+    cursor: pointer; /* 호버 상태일 때 포인터 모양으로 변경 */
+}
+
+.main-bar {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 2000px;
+    /* border-bottom: 2px solid blue; */
+    background-color: white;
+    background-size: cover;
+    color: black;
+    z-index: 100;
+}
+
+.main-bar-title {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    font-size: 3rem;
+    max-width: 1000px;
+    margin:  0 120px;
+    text-align: left;
+}
+
+.main-bar-search {
+    position: absolute;
+    left: 850px;
+    bottom: 10px;
+}
+
+#searchInput {
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.main-button {
+    position: absolute; /* 절대 위치 지정 */
+    right: 5px; /* 입력란 오른쪽에 위치시킬 값 조정 */
+    top: 50%; /* 세로 가운데 정렬 */
+    transform: translateY(-50%); /* 세로 가운데 정렬을 위한 변형 */
+    padding: 0px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.main-bar-sign {
+    position: absolute; /* 절대 위치 설정 */
+    width: auto; /* 필요한 크기만큼 */
+    text-align: right;
+    bottom: 25px; /* 바닥에 붙임 */
+    right: 20px; /* 오른쪽 끝에 위치 */
+    color: black;
+}
+
+
+.main-nav {
+    position: fixed;
+    background-color: white;
+    top: 5rem;
+    margin-left: 10px;
+    width: 220px;
+    height: 100%;
+    font-family: "Gaegu", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
+    z-index: 10;
+    
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    padding: 20px -1px;
+}
+
+.main-nav a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 13px 42px;
+    font-size: 1rem;
+    pointer-events: auto; /* 이 부분 추가 */
+    cursor: pointer; /* 포인터 커서로 변경 */
+}
+
+.main-nav-chanel {
+    width: 200px;
+    height: 400px;
+    margin-top: 20px;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+}
+
+/* .material-link {
+    max-width: 100px;
+} */
+
+.section0 {
+    width: 85%;  /* 네비게이션의 너비를 뺀 나머지 공간 */
+    height: 1000px;
+    margin-left: 425px; /* 네비게이션의 너비만큼 왼쪽 마진 */
+    position: relative;
+    padding-top: 7rem;
+    text-align: center;
+    
+    background-color: white;
+
+    /* background-image: url(./image/whiteVirtual_bg.jpg);
+    background-size: cover; */
+}
+
+.section0-background {
+    display: flex;
+    width: 90%;
+    height: 20%;
+    margin-left: -122px;
+
+    background-color: plum;
+    
+}
+
+.section0-video {
+    margin-top: 38px;
+    width: 40%;
+    height: 78%;
+    margin-left: 20px;
+
+}
+
+.section0-background-font {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    color:black;
+    margin-left: 40px;
+}
+
+.section0-background-message {
+    position: absolute;
+    top: 358px;
+    left: 900px;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.section0-message {
+    position: fixed;
+    top: 30%; /* 페이지 상단에서 세로 중앙으로 이동 */
+    left: 20%; /* 페이지 왼쪽에서 가로 중앙으로 이동 */
+    
+    font-size: 4rem;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0 ;
+}
+
+.section1 {
+    position: relative;
+    width: 100%; 
+    min-height: 1000px; /* 최소 높이 설정 */
+    margin-left: 220px; 
+    padding-top: 7rem;
+    text-align: center;
+    z-index: -1;
+    top: 20%;
+    background-color: white;
+}
+
+.section1-video-message {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section1-video {
+    display: flex;
+}
+
+.section-video video {
+    width: 100%; /* 가로로 나란히 배치하기 위해 너비 조정 */
+    height: auto; /* 비디오의 세로 비율 유지 */
+    margin-right: 10px; /* 비디오 간 간격을 설정할 수 있습니다. */
+}
+
+.section1-video2 {
+    display: flex;
+}
+
+.section1-video2 video {
+    width: 50%; /* 가로로 나열되는 비디오의 크기를 반으로 조정 */
+    height: auto; /* 비디오의 세로 비율을 자동으로 조정 */
+    object-fit: cover; /* 비디오의 가로세로 비율 유지 및 부모 요소에 맞추기 */
+}
+
+.section1-message {
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    margin-right: 200px;
+    margin-top: 200px;
+}
+
+.section1-menu {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 20px;
+    background-color: black;
+    font-size: 1rem;
+    margin-left: 120px;
+    max-width: 80%;
+}
+
+.before {
+    position: absolute;
+    left: 140px;
+    top: 65%;
+    height: 100px;
+    background-color: black; /* 배경색을 파란색으로 변경 */
+    color: white; /* 텍스트 색상을 흰색으로 변경 */
+    border: none; /* 테두리 없앰 */
+    padding: 10px 20px; /* 버튼의 내부 여백 설정 */
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+
+.next {
+    position: absolute;
+    right: 290px;
+    top: 65%;
+    height: 100px;
+    background-color: black; /* 배경색을 파란색으로 변경 */
+    color: white; /* 텍스트 색상을 흰색으로 변경 */
+    border: none; /* 테두리 없앰 */
+    padding: 10px 20px; /* 버튼의 내부 여백 설정 */
+    cursor: pointer;
+    font-size: 2rem;
+    
+}
+
+.section1-menu-message i {
+    margin-right: 5px; /* 아이콘과 텍스트 사이의 오른쪽 마진 설정 */
+}
+
+.section1-menu a {
+    display: block;
+    width: 100%; /* 섹션의 너비에 맞게 이미지의 너비를 조정합니다. */
+    max-width: 300px; /* 이미지의 최대 너비를 설정합니다. */
+    height: auto;
+    
+    margin-right: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: white
+}
+
+.section1-menu img {
+    width: 150%;
+    height: 70%;
+    margin: 20px 0 ;
+}
+
+.section1-menu-message {
+    margin-top: 30px;
+    left: 30%;
+}
+
+.section2-message {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section2 {
+    display: flex;
+    width: 85%;  /* 네비게이션의 너비를 뺀 나머지 공간 */
+    height: 1000px;
+    margin-left: 450px; /* 네비게이션의 너비만큼 왼쪽 마진 */
+    position: relative;
+    padding-top: 7rem;
+    text-align: left;
+    
+    background-color: white;
+}
+
+.section2-area0 {
+    max-width: 500px;
+    height: 500px;
+    margin-right: 50px;
+    margin-left: 80px;
+    background-color: white;
+
+    font-family: "Gaegu", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+
+}
+
+.section2-area1 {
+    max-width: 500px;
+    height: 500px;
+    margin-right: 50px;
+    margin-left: 150px;
+
+    font-family: "Gaegu", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+
+}
+
+.section2-area2 {
+    width: 1500px;
+    height: 500px;
+    left: -120px;
+    position: absolute;
+    top: 50%;
+
+    opacity: 1; /* 초기에 보이도록 설정 */
+    transition: opacity 2s ease;
+    z-index: 10;
+    
+}
+
+
+.section2-area2.fade-out {
+    opacity: 0; /* 투명도를 0으로 설정하여 사라지도록 함 */
+}
+
+.section2-picture p {
+    position: absolute;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: bold 400;
+    font-style: normal;
+   
+    font-size: 8rem;
+    top: 10%;
+    left: 300px;
+    color:whitesmoke;
+
+    
+
+}
+
+.section2-lastmessage {
+    position: absolute;
+    color: black;
+    bottom: 30%;
+    left: 400px;
+    background-color: white;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    border-radius: 20px;
+
+    z-index: 9;
+}
+
+.section2-login {
+    margin-left: 138px;
+}
+
+
+

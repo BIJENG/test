@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are All Virtual Entertainer !!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gugi&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Gaegu&family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Gaegu&family=Gasoek+One&family=Gugi&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main-bar">
+        <h1 class="main-bar-title">W A V E</h1>
+
+        <div class="main-bar-search">
+            <input type="text" id="searchInput" placeholder="   Waver, 동영상 검색">
+            <button class="main-button" onclick="search()"><i class="material-icons">search</i></button>
+        </div>
+
+        <div id="searchResults"></div>
+
+        <a href="./image/create.PNG" class="main-bar-sign">Join the Wave <i class="material-icons">surfing</i></a>
+        
+    </div>
+
+    <nav class="main-nav">
+        <a href="#" class="main-nav-link a" id="main-home"><i class="material-icons">home</i> Home</a>
+        <a href="#" class="main-nav-link a" id="main-intro"><i class="material-icons">youtube_searched_for</i> Introduce</a>
+        <a href="#" class="main-nav-link a" id="main-video"><i class="material-icons">play_circle_filled</i> Play</a>
+        <a href="#" class="main-nav-link a" id="main-help"><i class="material-icons">widgets</i> Menu</a>
+        <div class="main-nav-chanel">
+            <a href="#" class="main-nav-chanel-link" id="main-chanel">추천채널 <i class="material-icons">expand_more</i></a>
+
+            <div id="recommendedChannels" class="recommend-style" style="display: none;">
+                <ul id="channelList">
+                    <a href="./image/waver1.PNG" class="material-link a">
+                        <span><i class="material-icons">face_5</i>Waver 안병준</span>
+                    </a>
+                    
+                    <a href="./image/waver2.PNG" class="material-link b">
+                        <span><i class="material-icons">face_4</i>Waver 오리</span>
+                    </a>
+                    
+                    <a href="./image/waver1.PNG" class="material-link c">
+                        <span><i class="material-icons">face_6</i>Waver 햄버거</span>
+                    </a>
+                    
+                    <a href="./image/waver2.PNG" class="material-link d">
+                        <span><i class="material-icons">face_3</i>Waver 고등어</span>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <a href="./image/rank.PNG" class="main-nav-link" id="main-rank"><i class="material-icons">emoji_events</i> 랭킹</a>
+        <a href="./image/event.PNG" class="main-nav-link" id="main-event"><i class="material-icons">festival</i> 이벤트</a>
+        <a href="./image/help.PNG" class="main-nav-link" id="main-help"><i class="material-icons">support_agent</i> 고객센터</a>
+    </nav>
+
+    <section class="section0" id="section0-script">
+        <div class="section0-background">
+            <video class="section0-video" src="./video/baner.mp4" autoplay muted loop></video>
+            <p class="section0-background-font a"></p>
+            <p class="section0-background-message">2024-3-22 OPEN ! ! ! </p>
+        </div>
+
+        <div class="section0-message a">
+            <p>TV에서 더이상 재미를 찾을 수 없던 나에게</p>
+        </div>
+
+        <div class="section0-message b">
+            <p>실시간 라이브 방송은 나에게 혁명이었다.</p>
+        </div>
+
+        <div class="section0-message c">
+            <p>하지만 그것도 잠시 . . .</p>
+        </div>
+
+        <div class="section0-message d">
+            <p>똑같은 사람들과 한정된 공간 다시 찾아온 지루함 . . .</p>
+        </div>
+
+        <div class="section0-message e">
+            <p>더욱 화려하고 새로운건 없을까?</p>
+        </div>
+
+    </section>
+
+    <section class="section1" id="section1-script">
+        <div class="section1-canvas">
+            <canvas id="main-canvas" width="1280px" height="720px"></canvas>
+        </div>
+
+        <div class="section1-video-message">
+            <p>커스터마이즈하는 영상과, 플랫폼 영상을 올려 흥미를 돋구자</p>
+        </div>
+
+        <div class="section1-video">
+            <video src="./video/create.mp4" autoplay muted loop></video>
+            <video src="./video/meet.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="section1-video2">
+            <video src="./video/social.mp4" autoplay muted loop></video>
+            <video src="./video/dance.mp4" autoplay muted loop></video>
+
+        </div>
+
+        
+        
+        <p class="section1-message">Choice Menu</p>
+        <br>
+
+        <div class="section1-menu" id="slider">
+            <button id="before" class="before">◀</button>
+            <button id="next" class="next">▶</button>
+            <a href="./image/ilve.png" class="section1-menu-message slide">
+                <i class="material-icons">live_tv</i>실시간방송<img src="./image/Live.PNG" alt="대체 텍스트">
+            </a>
+
+            <a href="./image/make char.png" class="section1-menu-message slide">
+                <i class="material-icons">add_circle</i>나만의 캐릭터 만들기 <img src="./image/create.PNG" alt="대체 텍스트">
+            </a>
+            
+            <a href="./image/categories.PNG" class="section1-menu-message slide">
+                <i class="material-icons">category</i>카테고리<img src="./image/catego.PNG" alt="대체 텍스트">
+            </a>
+
+            <a href="./image/popular.PNG" class="section1-menu-message slide">
+                <i class="material-icons">thumb_up</i>인기영상<img src="./image/popular.PNG" alt="대체 텍스트">
+            </a>
+
+            <a href="./image/event.PNG" class="section1-menu-message slide">
+                <i class="material-icons">celebration</i>랭킹<img src="./image/event.PNG" alt="대체 텍스트">
+            </a>
+
+        </div>
+    </section>
+
+    <section class="section2" id="section2-script">
+        <div class="section2-area0">
+            <div class="section2-message a">당신을 위한 실시간 핫키워드</div>
+            <div class="section2-rank" id="hot-keywords"></div>
+        </div>
+
+        <div class="section2-area1">
+            <div class="section2-message b">당신을 위한 실시간 웨이버 순위</div>
+            <div class="section2-rank2" id="hot-wavers"></div>
+        </div>
+
+        <div class="section2-area2">
+            <div class="section2-picture">
+                <p>Are you ready to enjoy?</p>
+                <img src="./image/NPC.jpg" alt="NPC" width="1500px" height="800px">
+            </div>
+        </div>
+
+        <div class="section2-lastmessage">
+            <p>웨이브 월드에 합류하기</p>
+            <a href="./image/create.PNG" class="section2-login">Click</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-message">
+            <p>회사소개
+                서비스 소개
+                광고안내
+                인재채용
+                이용약관
+                개인정보처리방침
+                청소년보호정책
+                운영정책
+                권리침해신고센터
+                오픈스튜디오
+                Developers
+                주요서비스
+                패밀리 사이트
+                주소 : 부용로 233 114 -704 <br>FAX : 031-622-8008qudwns@naver.com(1688-7022)</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
